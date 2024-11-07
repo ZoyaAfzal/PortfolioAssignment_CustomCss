@@ -11,6 +11,7 @@
     width:100%;
     z-index:10;
     padding-left: 20px;
+    padding-right:20px;
    
 }
 
@@ -23,19 +24,17 @@
     display: flex;
     font-size: 1.5rem;
     font-weight:16px;
-     margin-top:1.6rem;
+    margin-top:1.6rem;
    
 }
 .menu:hover{
     color:rgb(248, 172, 9);
 }
-.menu-icon{
-    display:none;
- }
+
  #nav-item{
     margin-top: 1.7rem;
     margin-right:3.8rem ;  
-    display: flex;  
+    display:block;  
     font-weight: 14px;
     gap:2rem;
     cursor:pointer;
@@ -49,6 +48,15 @@
     margin-right: 2.5rem;
     cursor: pointer;
 }
+.menu-icon{
+    margin-top: 1.5rem;
+}
+
+.header-items{
+    display:block;
+    cursor:pointer;
+}
+
 
 
 
@@ -58,15 +66,41 @@
  }
  .menu-icon{
     display:none;
+    margin-left:18rem;
+    margin-top: 4rem;
+    
  }
- #navitem{
+ #nav-item{
     --tw-space-x-reverse:0;
     margin-right: calc(1.5rem/* 24px */ * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem/* 24px */ * 1-var(--tw-space-x-reverse));
-    display:block;
+    display:flex;
     margin-top:0px;
+    
  }
- .headeritems{
+ .header-items{
     display: inline-block;
- }
+
+   
 }
+}
+
+@media(min-width:640px){
+    .menu-icon{
+        display:none;
+        margin-left:12rem;
+        margin-top: 1.8rem;
+     }
+     #nav-item{
+        display:flex;
+        margin-top:1.8rem;
+        margin-right:8rem;
+        
+     }
+     .header-items{
+        display:inline-block;   
+
+    }
+  
+}
+

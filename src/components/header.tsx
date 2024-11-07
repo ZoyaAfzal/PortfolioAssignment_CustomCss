@@ -30,12 +30,13 @@ const Header = () => {
              onClick={() => showNavitems(prevState => !prevState)}
              />
         </div>
-        <div className= {`{ ${navitem ? 'custom-block' : 'custom-hidden'} headeritems`} id="nav-item">
+        <div className={` ${navitem ? 'custom-block' : 'custom-hidden'}`} id="nav-item">
           {    
                Object.keys(headerItems).map(item => (
                 <ScrollLink
                 to={headerItems[item as keyof NavItems].page}
                  key={headerItems[item as keyof NavItems].label}
+                 className='header-items'
                  spy={true}
                  smooth={true}
                >{headerItems[item as keyof NavItems].label}</ScrollLink>

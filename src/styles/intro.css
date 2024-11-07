@@ -107,11 +107,29 @@
         font-size:2.25rem;
         line-height: 2.25rem;
     }
+    
+
 }
 
-@media(min-width:640px){
+@media(max-width:640px){
     .intro-section{
         margin-left:3rem;
     }
+    .home-img{
+        border-radius: 50%;   
+        margin-right:5rem;
+        margin-top: 2rem;
+        --tw-shadow-color: #eab308;  
+        box-shadow: 0 4px 10px -1px var(--tw-shadow-color), 
+                    0 2px 4px -2px var(--tw-shadow-color); 
+    
+    }
+    .intro-section h3{
+        font-size:3.5rem;
+        text-transform:uppercase;
+        margin-left:1rem;
+        
+    }
+   
 
 }
